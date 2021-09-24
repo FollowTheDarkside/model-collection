@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Model Collection</title>
+    <!--A-Frame-->
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <!--stats.js-->
+    <script type="text/javascript" src="./libs/statsjs/build/stats.js"></script>
+    <!--Added Script-->
+    <script src="./model-info.js"></script>
+    <script src='./sample.js'></script>
+</head>
+<body>
+    <a-scene handler id="scene" light="defaultLightsEnabled: false">
+        <!-- <a-plane id="plane" color="rgb(125, 125, 125)" height="5" width="5" position="0 0 -5" rotation="-90 0 0"></a-plane> -->
+        <!-- <a-camera wasd-controls-enabled="false"></a-camera> --><!--Disables the default keyboard operation by A-Frame-->
+        <!-- <a-entity id="camRig" position="0 1.6 0">
+            <a-entity camera id="camera" wasd-controls-enabled="false"></a-entity>
+        </a-entity> -->
+        <a-light type="directional" color="rgb(255, 255, 255)" intensity="1.0" position="0 0 0"></a-light>
+        <a-light type="directional" color="rgb(255, 255, 255)" intensity="1.0" position="0 5 0"></a-light>
+        <a-light type="directional" color="rgb(255, 255, 255)" intensity="1.0" position="0 -5 0"></a-light>
+        <a-light type="directional" color="rgb(255, 255, 255)" intensity="1.0" position="5 0 0"></a-light>
+        <a-light type="directional" color="rgb(255, 255, 255)" intensity="1.0" position="-5 0 0"></a-light>
+        <a-light type="directional" color="rgb(255, 255, 255)" intensity="1.0" position="0 0 5"></a-light>
+        <a-light type="directional" color="rgb(255, 255, 255)" intensity="1.0" position="0 0 -5"></a-light>
+        <a-light type="ambient" color="rgb(255, 255, 255)" intensity="1.0"></a-light>
+    </a-scene>
+    <div id="gui">
+        <br>
+        <select id="modelNumber"></select>
+    </div>
+</body>
+</html>
