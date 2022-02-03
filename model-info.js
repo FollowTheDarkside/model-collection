@@ -5,4 +5,5 @@ var models = [
     "sea_20210916.glb",
     "rocks.glb",
     "tetrapod.glb",
+    "Trii_on_Rocks.glb",
 ]
