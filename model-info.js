@@ -7,4 +7,5 @@ var models = [
     "tetrapod.glb",
     "Trii_on_Rocks.glb",
     "MacaroniAlien.glb",
+    "blue-chair.glb",
 ]
